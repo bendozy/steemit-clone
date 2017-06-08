@@ -1,11 +1,7 @@
-import { combineReducers } from 'redux';
+import initialState from './initialState';
 import TRENDING_POSTS from '../actions/discussion';
 
-const initialState = {
-  trendingPosts: [],
-};
-
-const trendingPosts = (state = initialState, action) => {
+export default (state = initialState, action) => {
   switch (action.type) {
     case TRENDING_POSTS:
       return Object.assign({}, state, {
@@ -15,9 +11,3 @@ const trendingPosts = (state = initialState, action) => {
       return state;
   }
 };
-
-const rootReducer = combineReducers({
-  trendingPosts,
-});
-
-export default rootReducer;
