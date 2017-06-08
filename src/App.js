@@ -1,18 +1,11 @@
 import React, { Component } from 'react';
-import steem from 'steem';
 import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
 
   componentDidMount() {
-    const query = {
-      limit: 10,
-    };
 
-    steem.api.getDiscussionsByTrending(query, function(err, result) {
-      console.log(err, result);
-    });
   }
 
   render() {

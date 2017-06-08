@@ -1,0 +1,10 @@
+module.exports = {
+    "extends": "airbnb",
+    "installedESLint": true,
+    "plugins": [
+        "react"
+    ],
+    "rules": {
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }]
+    }
+};

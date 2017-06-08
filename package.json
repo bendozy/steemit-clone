@@ -3,13 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "eslint": "3.19.0",
     "react": "^15.5.4",
     "react-bootstrap": "0.31.0",
     "react-dom": "^15.5.4",
     "redux": "3.6.0",
+    "save": "2.3.0",
     "steem": "0.5.13"
   },
   "devDependencies": {
+    "eslint": "3.19.0",
+    "eslint-config-airbnb": "15.0.1",
+    "eslint-plugin-react": "7.0.1",
     "react-scripts": "1.0.7"
   },
   "scripts": {
