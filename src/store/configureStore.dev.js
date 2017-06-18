@@ -1,6 +1,6 @@
 import { createStore, compose, applyMiddleware } from 'redux';
 import reduxImmutableStateInvariant from 'redux-immutable-state-invariant';
-import createLogger from 'redux-logger';
+import { createLogger } from 'redux-logger';
 import thunk from 'redux-thunk';
 import rootReducer from '../reducers';
 
@@ -14,7 +14,7 @@ export default function configureStore(initialState) {
       reduxImmutableStateInvariant(),
       loggerMiddleware,
     ),
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
+    window.devToolsExtension ? window.devToolsExtension() : f => f,
     ),
   );
   /* eslint-enable */

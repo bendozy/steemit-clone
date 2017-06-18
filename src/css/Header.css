@@ -1,0 +1,140 @@
+.Header {
+    position: fixed;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #fefefe;
+}
+.Header__top-steemit .beta {
+    position: relative;
+    top: 14px;
+    right: 22px;
+    font-size: .7rem;
+    color: #4ba2f2;
+}
+header {
+    display: block;
+}
+.Header__top {
+    background-color: #fefefe;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.Header .menu {
+    background-color: #fefefe;
+    padding-left: 0;
+}
+
+.menu, .menu.horizontal {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.menu {
+    margin: 0;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.Header__top ul>li.Header__top-logo {
+    padding: .35rem 0;
+}
+
+.Header .menu {
+     background-color: #fefefe;
+     padding-left: 0;
+}
+.VerticalMenu {
+    min-width: 145px;
+    z-index: 1000;
+    background-color: #fff;
+    display: block;
+    border: 1px solid #cacaca;
+    border-radius: 3px;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    -webkit-transform: translateY(10%);
+    transform: translateY(10%);
+    transition: all .3s ease 0s,visibility 0s linear .3s;
+    box-shadow: 1px 1px 5px 0 rgba(50,50,50,.75);
+}
+.VerticalMenuShown {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    transition-delay: 0s;
+}
+.VerticalMenuHiden {
+    visibility: hidden;
+}
+.menu.vertical {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.VerticalMenu {
+    width: 200px;
+}
+
+.menu.horizontal>li, .menu>li {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+.menu>li {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+}
+.Header .menu .hamburger {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 16px;
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+}
+.menu>li>a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    line-height: 1.5rem;
+}
+
+.Header__top ul>li>a {
+    font-size: 1.1rem;
+}
+.menu>li>a {
+    padding: .7rem 1rem
+}
+.Header__sub-nav {
+    border-bottom: 1px solid transparent;
+}
+.Header__sub-nav li>a {
+    color: #8a8a8a;
+    background-color: #fefefe;
+    border-bottom: 1px solid transparent;
+}
+.Header__sub-nav li>b>a {
+    color: #000000;
+    background-color: #fefefe;
+}
+

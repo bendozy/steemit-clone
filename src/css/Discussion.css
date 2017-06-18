@@ -1,0 +1,600 @@
+.discussion-header > h3 {
+    font: 600 100% Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Arial,sans-serif;
+    margin: 0;
+    overflow: hidden;
+}
+
+.discussion-header>h3>a {
+    color: #333;
+}
+
+.discussion-image {
+    cursor: pointer;
+    float: left;
+    width: 130px;
+    height: 4.5rem;
+    background-color: #eee;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    border: 1px solid #eee;
+}
+
+.discussion-body {
+    width: auto;
+    padding: .3rem .1rem .15rem;
+    font-family: Helvetica Neue, Helvetica, Verdana, Arial, sans-serif;
+    color: #666;
+    overflow: hidden;
+    line-height: 1.4;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.discussion-body a {
+    color: inherit;
+    display: inline
+}
+
+
+
+
+
+.discussion {
+    padding: 0 0 .5rem;
+    margin: 0 0 1.25vw;
+    background-color: #fff;
+    clear: left
+}
+
+.discussion:after, .discussion:before {
+    display: table;
+    content: " ";
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1
+}
+
+.discussion:after {
+    clear: both
+}
+
+.discussion .discussion__nsfw-warning {
+    border: 1px solid #cacaca;
+    border-radius: .5rem;
+    padding: .75rem 2rem;
+    min-height: 80px
+}
+
+.discussion .discussion__nsfw-warning .discussion__footer {
+    margin-top: .2rem
+}
+
+.discussion .discussion__nsfw-warning .discussion__footer .Reblog__button, .discussion .discussion__nsfw-warning .discussion__footer .Voting__button {
+    display: none
+}
+
+.discussion .discussion__nsfw-warning .discussion__time_author_category_small {
+    margin-bottom: .2rem
+}
+
+.discussion .nsfw-flag {
+    color: #c00;
+    border: 1px solid #c00;
+    font-size: 75%;
+    border-radius: 3px;
+    font-weight: 400;
+    font-family: Arial;
+    margin: 0 .1rem;
+    padding: 0 .2rem
+}
+
+.discussion__image {
+    cursor: pointer;
+    float: left;
+    width: 130px;
+    height: 4.5rem;
+    background-color: #eee;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    border: 1px solid #eee
+}
+
+.discussion__image-mobile {
+    display: block;
+    background: #f8f8f8
+}
+
+.discussion__image-mobile img {
+    margin: 0 auto;
+    margin-top: .2rem;
+    display: block;
+    max-width: 100%;
+    max-height: 80vw;
+    background: #fff;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+}
+
+.discussion.with-image .discussion__content, .discussion.with-image .discussion__reblogged_by {
+    margin-left: 8.25rem
+}
+
+.discussion__header>h3 {
+    font: 600 100% Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Arial, sans-serif;
+    margin: 0;
+    overflow: hidden
+}
+
+.discussion__header>h3>a {
+    color: #333
+}
+
+.discussion__header>h3>a:visited {
+    color: #777
+}
+
+.discussion__header>h3 .Icon {
+    margin: 0 .25rem
+}
+
+.discussion__header>h3 .Icon svg {
+    width: .85rem;
+    height: .85rem;
+    vertical-align: 5%
+}
+
+.discussion__header .nsfw-flag {
+    margin-right: .25rem
+}
+
+.discussion__collapse {
+    opacity: 0;
+    will-change: opacity
+}
+
+.discussion:hover .discussion__collapse {
+    opacity: 1
+}
+
+.discussion__body {
+    width: auto;
+    padding: .3rem .1rem .15rem;
+    font-family: Helvetica Neue, Helvetica, Verdana, Arial, sans-serif;
+    color: #666;
+    overflow: hidden;
+    line-height: 1.4;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.discussion__body a {
+    color: inherit;
+    display: inline
+}
+
+.discussion__footer {
+    color: #8a8a8a;
+    font-weight: 400
+}
+
+.discussion__footer path {
+    fill: #8a8a8a
+}
+
+.discussion__footer a {
+    color: #8a8a8a
+}
+
+.discussion__footer .Icon {
+    position: relative;
+    top: -1px
+}
+
+.discussion__time_author_category {
+    color: #8a8a8a;
+    padding-left: 1rem;
+    margin-left: 1rem;
+    border-left: 1px solid #cacaca
+}
+
+.discussion__time_author_category a {
+    color: #8a8a8a;
+    font-weight: 700
+}
+
+.discussion__time_author_category a:hover {
+    text-decoration: underline
+}
+
+.discussion__time_author_category .Reblog__button {
+    margin-right: 1rem;
+    padding-right: 1rem;
+    border-right: 1px solid #cacaca
+}
+
+.discussion__time_author_category_small a {
+    color: #8a8a8a
+}
+
+@media screen and (min-width:39.9375em) {
+    .discussion.with-image .discussion__reblogged_by .Icon.reblog {
+        margin-left: -22px
+    }
+}
+
+.discussion__reblogged_by {
+    color: #8a8a8a;
+    font-size: 90%;
+    margin-top: -.5rem
+}
+
+.discussion__reblogged_by .Icon path {
+    fill: #cacaca
+}
+
+.discussion__reblogged_by a {
+    color: inherit;
+    font-weight: 700
+}
+
+.discussion__reblogged_by a:hover {
+    text-decoration: underline
+}
+
+@media screen and (max-width:39.9375em) {
+    .discussion {
+        padding: 1rem .5rem;
+        margin-bottom: 0;
+        border: none;
+        border-top: 1px solid #e6e6e6
+    }
+    .discussion__image {
+        float: none;
+        margin-top: .5rem;
+        display: block;
+        width: 100%;
+        height: 40vw
+    }
+    .discussion__body {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+        white-space: normal;
+        text-overflow: clip;
+        padding-bottom: .3rem
+    }
+    .discussion__body a {
+        display: block
+    }
+    .discussion.with-image .discussion__content, .discussion.with-image .discussion__reblogged_by {
+        margin-left: 0
+    }
+    .discussion__footer .Voting, .discussion__footer .Voting__inner {
+        border-right: none
+    }
+    .discussion__time_author_category {
+        margin-left: 0;
+        border-left: 1px solid #cacaca
+    }
+    .discussion__time_author_category .Reblog__button {
+        margin-right: 1rem;
+        padding-right: 1rem;
+        border-right: none
+    }
+}
+
+.Voting, .Voting span {
+    white-space: nowrap!important
+}
+
+.Voting__button .Icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+}
+
+.Voting__button path {
+    fill: #8a8a8a
+}
+
+.Voting__button circle {
+    stroke: #8a8a8a
+}
+
+.Voting__button>a:hover path {
+    fill: #333
+}
+
+.Voting__about-flag {
+    margin-right: 30px
+}
+
+.Voting__button-up .Icon {
+    margin-left: 0;
+    border-radius: 50%
+}
+
+.Voting__button-up>a {
+    padding-right: .5rem
+}
+
+.Voting__button-up path {
+    fill: #4ba2f2
+}
+
+.Voting__button-up circle {
+    stroke: #4ba2f2
+}
+
+@media screen and (min-width:39.9375em) {
+    .Voting__button-up .Icon:hover {
+        box-shadow: 0 0 0 #4ba2f2;
+        -webkit-animation: pulse 2s infinite;
+        animation: pulse 2s infinite
+    }
+}
+
+.Voting__button-up>a:hover path, a.confirm_weight:hover path {
+    fill: #fff
+}
+
+.Voting__button-up>a:hover circle, a.confirm_weight:hover circle {
+    fill: #4ba2f2;
+    stroke: #4ba2f2
+}
+
+.Voting__button-up>a:hover svg, a.confirm_weight:hover svg {
+    background-size: contain;
+    border-radius: 50%
+}
+
+.Voting__button-up.votingUp {
+    padding-right: .5rem
+}
+
+.Voting__button-up.votingUp svg {
+    border: 1px solid #4ba2f2;
+    border-radius: 50%;
+    border-right-color: transparent;
+    border-top-color: transparent
+}
+
+.Voting__button-down.votingDown svg, .Voting__button-up.votingUp svg {
+    -webkit-animation: loading .5s infinite linear;
+    animation: loading .5s infinite linear
+}
+
+.Voting__button-down.votingDown svg {
+    border: 1px solid #a00;
+    border-radius: 50%;
+    border-right-color: transparent;
+    border-top-color: transparent
+}
+
+.Voting__button-down {
+    margin-left: .25rem
+}
+
+.Voting__button-down .Voting__button-downvotes {
+    color: #aaa;
+    font-size: 80%;
+    vertical-align: 15%;
+    padding-right: .1rem
+}
+
+.Voting__button-down a:hover path {
+    fill: #a00
+}
+
+.Voting__button--upvoted .Icon:hover {
+    -webkit-animation: none!important;
+    animation: none!important
+}
+
+.Voting__button--upvoted path {
+    fill: #fff!important
+}
+
+.Voting__button--upvoted circle {
+    fill: #4ba2f2;
+    stroke: #4ba2f2
+}
+
+.Voting__button--upvoted a:hover path {
+    fill: #fff!important
+}
+
+.Voting__button--upvoted a:hover circle {
+    fill: #258deb;
+    stroke: #258deb
+}
+
+.Voting__button--downvoted path {
+    fill: #a00
+}
+
+.Voting .DropdownMenu ul {
+    width: 240px
+}
+
+.Voting .DropdownMenu ul li>a, .Voting .DropdownMenu ul li>span {
+    padding: 0 .5rem;
+    line-height: 1.25
+}
+
+.DropdownMenu.Voting__voters_list ul li>span {
+    padding: .25rem .5rem;
+    font-size: 82.5%;
+    display: block;
+    color: #666
+}
+
+.Voting__inner {
+    border-right: 1px solid #cacaca;
+    padding-right: .8rem;
+    margin-right: .6rem
+}
+
+.Voting__inner .DropdownMenu .Icon.dropdown-arrow {
+    margin-right: -.5rem
+}
+
+.Voting__inner .cancel {
+    font-size: 80%;
+    padding: 0 .4em;
+    margin-left: .5rem;
+    margin-right: 2px;
+    background-color: #f8f8f8;
+    border-radius: 50%;
+    border: 1px solid #dadada;
+    color: #8a8a8a
+}
+
+.Voting__adjust_weight_down {
+    right: 0;
+    width: auto!important;
+    max-width: 500px
+}
+
+.Voting__adjust_weight_down div.clear {
+    clear: both
+}
+
+.Voting__adjust_weight_down p, .Voting__adjust_weight_down span {
+    white-space: normal!important
+}
+
+.Voting__adjust_weight_down .weight-display {
+    color: #c00!important
+}
+
+.Voting__adjust_weight_down .rangeslider {
+    margin-right: 2rem
+}
+
+.Voting__adjust_weight, .Voting__adjust_weight_down {
+    padding: 10px 20px;
+    margin-right: 10px;
+    width: 350px;
+    overflow: hidden
+}
+
+.Voting__adjust_weight .Icon:hover, .Voting__adjust_weight_down .Icon:hover {
+    -webkit-animation: none!important;
+    animation: none!important
+}
+
+.Voting__adjust_weight .weight-display, .Voting__adjust_weight_down .weight-display {
+    width: 3rem;
+    float: left;
+    margin-right: .5rem;
+    text-align: right;
+    color: #8a8a8a;
+    line-height: 2.6rem
+}
+
+.Voting__adjust_weight_down a.confirm_weight, .Voting__adjust_weight a.confirm_weight {
+    float: left;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2.6rem
+}
+
+.Voting__adjust_weight .rangeslider, .Voting__adjust_weight_down .rangeslider {
+    position: relative;
+    float: left;
+    background: #e6e6e6
+}
+
+.Voting__adjust_weight .rangeslider .rangeslider__fill, .Voting__adjust_weight .rangeslider .rangeslider__handle, .Voting__adjust_weight_down .rangeslider .rangeslider__fill, .Voting__adjust_weight_down .rangeslider .rangeslider__handle {
+    position: absolute
+}
+
+.Voting__adjust_weight .rangeslider, .Voting__adjust_weight .rangeslider .rangeslider__fill, .Voting__adjust_weight_down .rangeslider, .Voting__adjust_weight_down .rangeslider .rangeslider__fill {
+    display: block;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .3);
+    border-radius: 10px
+}
+
+.Voting__adjust_weight .rangeslider .rangeslider__handle, .Voting__adjust_weight_down .rangeslider .rangeslider__handle {
+    background: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    display: inline-block;
+    position: absolute
+}
+
+.Voting__adjust_weight .rangeslider .rangeslider__handle:active, .Voting__adjust_weight_down .rangeslider .rangeslider__handle:active {
+    background: #4ba2f2
+}
+
+.Voting__adjust_weight .rangeslider-horizontal, .Voting__adjust_weight_down .rangeslider-horizontal {
+    height: 10px;
+    width: 200px;
+    background: none;
+    float: left;
+    margin-top: 18px
+}
+
+.Voting__adjust_weight .rangeslider-horizontal .rangeslider__fill, .Voting__adjust_weight_down .rangeslider-horizontal .rangeslider__fill {
+    height: 100%;
+    background: #4ba2f2;
+    box-shadow: none;
+    left: 0
+}
+
+.Voting__adjust_weight .rangeslider-horizontal .rangeslider__handle, .Voting__adjust_weight_down .rangeslider-horizontal .rangeslider__handle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: -10px
+}
+
+.Voting__adjust_weight .rangeslider-horizontal .rangeslider__handle:active, .Voting__adjust_weight_down .rangeslider-horizontal .rangeslider__handle:active {
+    box-shadow: none
+}
+
+.Voting__adjust_weight .Voting__adjust_weight_close, .Voting__adjust_weight_down .Voting__adjust_weight_close {
+    position: static;
+    line-height: 2.6rem;
+    font-size: 2rem;
+    margin-left: 1rem
+}
+
+@media screen and (max-width:39.9375em) {
+    .Voting__button-up .dropdown-pane {
+        margin-top: -36px;
+        position: absolute;
+        left: 1rem
+    }
+}
+
+@media screen and (min-width:39.9375em) {
+    .Voting__button-up {
+        display: inline-block;
+        position: relative
+    }
+    .Voting__button-up .dropdown-pane {
+        top: -18px;
+        left: -28px
+    }
+}
+
+.Reputation {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 0 3px;
+    margin-left: 2px;
+    margin-right: 2px;
+    background-color: #f8f8f8;
+    border-radius: 50%;
+    border: 1px solid #dadada;
+    color: #8a8a8a;
+}

@@ -5,7 +5,8 @@ module.exports = {
         "react"
     ],
     "globals": {
-        "window": true
+        "window": true,
+        "document": true,
     },
     "rules": {
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],

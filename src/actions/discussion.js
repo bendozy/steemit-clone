@@ -1,24 +1,23 @@
 import steem from 'steem';
 
-const TRENDING_POSTS = 'TRENDING_POSTS';
-export default TRENDING_POSTS;
+const TRENDING_DISCUSSIONS = 'TRENDING_DISCUSSIONS';
 
-function receiveTrendingPosts(trendingPosts) {
-  return {
-    type: TRENDING_POSTS,
-    trendingPosts,
-  };
-}
+const receiveTrendingDiscussions = trendingDiscussions => ({
+  type: TRENDING_DISCUSSIONS,
+  trendingDiscussions,
+});
 
-function fetchTrendingPosts(limit) {
-  return (dispatch) => {
+const fetchTrendingDiscussions = limit =>
+  (dispatch) => {
     const query = { limit };
 
-    return steem.api.getDiscussionsByTrending(query, (err, trendingPosts) => {
+    return steem.api.getDiscussionsByTrending(query, (err, trendingDiscussions) => {
       if (err) {
         throw err;
       }
-      dispatch(receiveTrendingPosts(trendingPosts));
+
+      dispatch(receiveTrendingDiscussions(trendingDiscussions));
     });
   };
-}
+
+export { fetchTrendingDiscussions, TRENDING_DISCUSSIONS };

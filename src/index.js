@@ -1,8 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import { Provider } from 'react-redux';
+import { setDropDownVisibility } from './actions/dropdown';
+import { fetchTrendingDiscussions } from './actions/discussion';
+import App from './components/App';
+import initialState from './reducers/initialState';
+import configureStore from './store/configureStore';
 import registerServiceWorker from './registerServiceWorker';
-import './index.css';
+import './css/index.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const store = configureStore(initialState);
+store.dispatch(setDropDownVisibility());
+store.dispatch(fetchTrendingDiscussions());
+
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('root'));
+
 registerServiceWorker();
+

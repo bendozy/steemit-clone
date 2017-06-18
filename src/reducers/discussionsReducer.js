@@ -1,11 +1,11 @@
 import initialState from './initialState';
-import TRENDING_POSTS from '../actions/discussion';
+import { TRENDING_DISCUSSIONS } from '../actions/discussion';
 
-export default (state = initialState, action) => {
+export default (state = initialState.discussions, action) => {
   switch (action.type) {
-    case TRENDING_POSTS:
+    case TRENDING_DISCUSSIONS:
       return Object.assign({}, state, {
-        trendingPosts: action.trendingPosts,
+        trendingDiscussions: action.trendingDiscussions,
       });
     default:
       return state;

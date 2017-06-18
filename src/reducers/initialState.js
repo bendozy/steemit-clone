@@ -1,3 +1,8 @@
 export default {
-  trendingPosts: [],
+  discussions: {
+    trendingDiscussions: [],
+  },
+  dropdown: {
+    visible: false,
+  },
 };
